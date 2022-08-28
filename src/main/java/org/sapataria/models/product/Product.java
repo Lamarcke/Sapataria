@@ -8,16 +8,13 @@ import lombok.Setter;
 @Setter
 public class Product{
     private final String name;
-    private final String size;
-    private final int stock;
-    private final double price;
+    private String size;
+    private int stock;
+    private float price;
     private final String brand;
     private final ProductModels model;
 
-
-
-
-    public Product(String name, String size, int stock, double price, String brand, ProductModels model) {
+    public Product(String name, String size, int stock, float price, String brand, ProductModels model) {
         this.name = name;
         this.size = size;
         this.stock = stock;
@@ -25,4 +22,5 @@ public class Product{
         this.brand = brand;
         this.model = model;
     }
+
 }
